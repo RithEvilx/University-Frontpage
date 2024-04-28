@@ -1,0 +1,70 @@
+.page1 .content-bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content h1,
+.content p,
+.content .visit-us {
+  color: white;
+  z-index: 10;
+}
+.content h1 {
+  margin-bottom: 35px;
+  font-size: 75px;
+  font-weight: bold;
+}
+.content txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/*! visit-us */
+.content .visit-us {
+  margin-top: 40px;
+  border: 1px solid white;
+  padding: 10px 35px;
+  position: relative;
+}
+.content .visit-us .right {
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    border: 2px solid #fff;
+    width: 30px;
+}
+.content .visit-us .left {
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    border: 2px solid #fff;
+    width: 30px;
+}
+.content .visit-us:hover {
+    background-color: #d62f1c;
+}
+.content .visit-us:hover .right,
+.content .visit-us:hover .left {
+    border: 2px solid orange;
+}
+
+.content .visit-us {
+    transition: backgroud-color 0.5s linear;
+}
+.content .visit-us .right,
+.content .visit-us .left {
+    transition: border 0.3s ease-in;
+}

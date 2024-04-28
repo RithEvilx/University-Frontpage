@@ -1,0 +1,24 @@
+.page1 {
+  background: url(img/banner.png) no-repeat center center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  /* filter: brightness(85%); */
+  margin-bottom: 70px;
+}
+
+.page1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(6, 33, 51, 0.3);
+  z-index: 0;
+}
+
+.page2 {
+  width: 100vw;
+  height: 80vh;
+}
